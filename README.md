@@ -1,3 +1,12 @@
+## quick start
+
+git clone https://github.com/telmott/react-demo.git react-demo<br />
+cd react-demo<br />
+npm i<br />
+git checkout 01<br />
+npm start<br />
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
