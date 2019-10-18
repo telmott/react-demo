@@ -42,7 +42,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className={'App-header ' + this.getClassName()}>
-          <Text text={this.getText()} />
+          <Text text={this.getText()} day={this.state.day}/>
         </header>
       </div>
     );
