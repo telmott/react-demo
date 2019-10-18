@@ -13,7 +13,8 @@ class App extends React.Component {
 
     this.getText = this.getText.bind(this);
     this.getClassName = this.getClassName.bind(this);
-    // this.toggleDay = this.toggleDay.bind(this);
+    this.toggleDay = this.toggleDay.bind(this);
+    // this.changeText = this.changeText.bind(this);
   }
 
   getText() {
@@ -32,9 +33,21 @@ class App extends React.Component {
     return 'night';
   }
 
-  // toggleDay() {
+  toggleDay() {
+    this.setState(
+      { day: !this.state.day }
+    );
+  }
+
+  // changeText(e) {
+  //   var key = 'nigthText';
+
+  //   if (this.state.day) {
+  //     key = 'dayText';
+  //   }
+
   //   this.setState(
-  //     { day: !this.state.day }
+  //     {[key]: e.target.value}
   //   );
   // }
 
@@ -42,6 +55,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className={'App-header ' + this.getClassName()}>
+          <button onClick={this.toggleDay}>Toggle</button>
           <Text text={this.getText()} day={this.state.day}/>
         </header>
       </div>
@@ -51,4 +65,4 @@ class App extends React.Component {
 
 export default App;
 
-// <button onClick={this.toggleDay}>Toggle</button>
+// <Text text={this.getText()} day={this.state.day} changeText={this.changeText}/>

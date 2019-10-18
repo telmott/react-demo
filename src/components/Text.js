@@ -15,3 +15,5 @@ function Text(props) {
 }
 
 export default Text;
+
+// <input type="text" className={textClass} value={props.text} onChange={props.changeText}/>
