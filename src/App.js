@@ -11,31 +11,38 @@ class App extends React.Component {
       nigthText: 'NIGHT'
     }
 
-    // this.getText = this.getText.bind(this);
-    // this.getClassName = this.getClassName.bind(this);
+    this.getText = this.getText.bind(this);
+    this.getClassName = this.getClassName.bind(this);
+    // this.toggleDay = this.toggleDay.bind(this);
   }
 
-  // getText() {
-  //   if (this.state.day) {
-  //     return this.state.dayText;
-  //   }
+  getText() {
+    if (this.state.day) {
+      return this.state.dayText;
+    }
 
-  //   return this.state.nigthText;
-  // }
+    return this.state.nigthText;
+  }
 
-  // getClassName() {
-  //   if (this.state.day) {
-  //     return 'day';
-  //   }
+  getClassName() {
+    if (this.state.day) {
+      return 'day';
+    }
 
-  //   return 'night';
+    return 'night';
+  }
+
+  // toggleDay() {
+  //   this.setState(
+  //     { day: !this.state.day }
+  //   );
   // }
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <Text text={'isto é o componente Text'} />
+        <header className={'App-header ' + this.getClassName()}>
+          <Text text={this.getText()} />
         </header>
       </div>
     );
@@ -44,6 +51,4 @@ class App extends React.Component {
 
 export default App;
 
-// <Text text={this.state.dayText} />
-// <Text text={this.getText()} />
-// <header className={'App-header ' + this.getClassName()}>
+// <button onClick={this.toggleDay}>Toggle</button>
