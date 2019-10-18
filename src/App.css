@@ -16,6 +16,10 @@
   color: white;
 }
 
+.App-header h1{
+  color: black;
+}
+
 .day {
   background-color: skyblue;
 }
