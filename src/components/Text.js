@@ -10,10 +10,8 @@ function Text(props) {
     }
 
     return (
-        <h1 className={textClass}>{props.text}</h1>
+        <input type="text" className={textClass} value={props.text} onChange={props.changeText}/>
     );
 }
 
-export default Text;
-
-// <input type="text" className={textClass} value={props.text} onChange={props.changeText}/>
+export default Text;    
