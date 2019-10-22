@@ -14,4 +14,4 @@ function Text(props) {
     );
 }
 
-export default Text;
+export default Text;    
