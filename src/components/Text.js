@@ -1,19 +1,20 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Input = styled.input`
+    font-size: 8em;
+    font-family: monospace;
+    max-width: 90%;
+    border: 0px;
+    text-align: center;
+    background-color: ${props => props.theme.background};
+    color: ${props => props.theme.color};
+`
 
 function Text(props) {
-    var textClass = 'text';
-
-    if (props.day) {
-        textClass += ' text__day day';
-    } else {
-        textClass += ' text__night night';
-    }
-
     return (
-        <h1 className={textClass}>{props.text}</h1>
+        <Input type="text" value={props.text} onChange={props.changeText}/>
     );
 }
 
 export default Text;
-
-// <input type="text" className={textClass} value={props.text} onChange={props.changeText}/>

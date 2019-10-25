@@ -1,12 +1,5 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
+/* .App-header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -14,21 +7,21 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
-}
+} */
 
-.day {
+/* .day {
   background-color: skyblue;
-}
+} */
 
-.text {
+/* .text {
   font-size: 8em;
   font-family: monospace;
   max-width: 90%;
   border: 0px;
   text-align: center;
-}
+} */
 
-.night {
+/* .night {
   background-color: #282c34;
 }
 
@@ -38,8 +31,4 @@
 
 .text__day {
   color: yellow;
-}
-
-.App-link {
-  color: #09d3ac;
-}
+} */
