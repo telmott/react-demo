@@ -13,7 +13,7 @@ const Input = styled.input`
 
 function Text(props) {
     return (
-        <Input type="text" value={props.text} onChange={props.changeText}/>
+        <Input as={props.html} type="text" value={props.text} onChange={props.changeText}>{props.label}</Input>
     );
 }
 
