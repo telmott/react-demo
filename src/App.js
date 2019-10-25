@@ -68,7 +68,7 @@ class App extends React.Component {
       <ThemeProvider theme={this.getTheme()}>
           <AppWrapper>
             <button onClick={this.toggleDay}>Toggle</button>
-            <Text theme={this.getTheme()} text={this.getText()} day={this.state.day} changeText={this.changeText}/>
+            <Text text={this.getText()} changeText={this.changeText}/>
             <Text html="label" label={this.getText()}/>
           </AppWrapper>
       </ThemeProvider>
